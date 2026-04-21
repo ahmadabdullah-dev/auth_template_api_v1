@@ -6,6 +6,7 @@ public sealed class SuperAdminEntity
     public Guid Id { get; private set; } = Guid.NewGuid();
     public string UserId { get; private set; } = string.Empty;
     public string? EmergencyContactEmail { get; private set; }
+    public string? EmergencyContactPhone { get; private set; }
     public DateTimeOffset AssignedAt { get; private set; } = DateTimeOffset.UtcNow;
     public DateTimeOffset? LastPrivilegedActionAt { get; private set; }
 
@@ -13,9 +14,10 @@ public sealed class SuperAdminEntity
 
     private SuperAdminEntity() { }
 
-    public SuperAdminEntity(string userId, string? emergencyContactEmail = null)
+    public SuperAdminEntity(string userId, string? emergencyContactEmail = null,string? emergencyContactPhone = null)
     {     
         UserId = userId;
         EmergencyContactEmail = emergencyContactEmail?.Trim().ToLowerInvariant();
+        EmergencyContactPhone = emergencyContactPhone?.Trim();
     }
 }

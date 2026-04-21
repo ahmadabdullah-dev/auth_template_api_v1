@@ -8,17 +8,17 @@ public sealed class AdminEntity
     public string UserId { get; private set; } = string.Empty;
 
     public string Department { get; private set; } = string.Empty;
-    public string JobTitle { get; private set; } = string.Empty;
-    public string? OfficeLocation { get; private set; }
+    public string Title { get; private set; } = string.Empty;
+    public string? Location { get; private set; }
     public DateTimeOffset AssignedAt { get; private set; } = DateTimeOffset.UtcNow;
     public UserEntity User { get; private set; } = null!;
 
     private AdminEntity() { }
 
-    public AdminEntity(string userId, string department, string jobTitle)
+    public AdminEntity(string userId, string department, string title)
     {
         UserId = userId;
         Department = department.Trim();
-        JobTitle = jobTitle.Trim();
+        this.Title = title.Trim();
     }
 }
