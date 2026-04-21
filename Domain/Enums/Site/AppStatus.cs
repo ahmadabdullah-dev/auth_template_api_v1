@@ -1,6 +1,6 @@
-﻿namespace Domain.Enums.App;
+﻿namespace Domain.Enums.Site;
 
-public enum AppStatus
+public enum SiteStatus
 {
     ComingSoon,
     Active,

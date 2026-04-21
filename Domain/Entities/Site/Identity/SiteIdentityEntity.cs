@@ -1,6 +1,6 @@
 ﻿namespace Domain.Entities.App.Identity;
 
-public sealed class AppIdentityEntity
+public sealed class SiteIdentityEntity
 {
     public string Name { get; private set; } = string.Empty;
     public string Slug { get; private set; } = string.Empty;
@@ -9,9 +9,9 @@ public sealed class AppIdentityEntity
     public string FullDescription { get; private set; } = string.Empty;
     public string Version { get; private set; } = string.Empty;
 
-    private AppIdentityEntity() { }
+    private SiteIdentityEntity() { }
 
-    public AppIdentityEntity(
+    public SiteIdentityEntity(
         string name,
         string slug,
         string tagline,

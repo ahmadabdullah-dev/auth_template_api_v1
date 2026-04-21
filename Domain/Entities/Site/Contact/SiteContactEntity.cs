@@ -1,6 +1,6 @@
 ﻿namespace Domain.Entities.App.Contact;
 
-public sealed class AppContactEntity
+public sealed class SiteContactEntity
 {
     public string SupportEmail { get; private set; } = string.Empty;
     public string ContactEmail { get; private set; } = string.Empty;
@@ -8,9 +8,9 @@ public sealed class AppContactEntity
     public string? City { get; private set; }
     public string? Country { get; private set; }
 
-    private AppContactEntity() { }
+    private SiteContactEntity() { }
 
-    public AppContactEntity(string supportEmail, string contactEmail)
+    public SiteContactEntity(string supportEmail, string contactEmail)
     {
         SupportEmail = supportEmail.Trim().ToLowerInvariant();
         ContactEmail = contactEmail.Trim().ToLowerInvariant();

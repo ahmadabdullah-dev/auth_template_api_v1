@@ -1,6 +1,6 @@
 ﻿namespace Domain.Entities.App.Social;
 
-public sealed class AppSocialEntity
+public sealed class SiteSocialEntity
 {
     public string? TwitterUrl { get; private set; }
     public string? LinkedInUrl { get; private set; }
@@ -11,5 +11,5 @@ public sealed class AppSocialEntity
     public string? TelegramUrl { get; private set; }
     public string? FacebookUrl { get; private set; }
 
-    public AppSocialEntity() { }
+    public SiteSocialEntity() { }
 }

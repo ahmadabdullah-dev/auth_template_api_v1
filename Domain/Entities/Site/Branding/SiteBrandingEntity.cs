@@ -1,6 +1,6 @@
 ﻿namespace Domain.Entities.App.Branding;
 
-public sealed class AppBrandingEntity
+public sealed class SiteBrandingEntity
 {
     public string? LogoUrl { get; private set; }
     public string? FaviconUrl { get; private set; }
@@ -8,9 +8,9 @@ public sealed class AppBrandingEntity
     public string? SecondaryColor { get; private set; }
     public string? AccentColor { get; private set; }
 
-    private AppBrandingEntity() { }
+    private SiteBrandingEntity() { }
 
-    public AppBrandingEntity(
+    public SiteBrandingEntity(
         string? logoUrl = null,
         string? logoDarkUrl = null,
         string? faviconUrl = null,

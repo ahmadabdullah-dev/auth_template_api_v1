@@ -1,6 +1,6 @@
 ﻿namespace Domain.Entities.App.Seo;
 
-public sealed class AppSeoEntity
+public sealed class SiteSeoEntity
 {
     public string? MetaTitle { get; private set; }
     public string? MetaDescription { get; private set; }
@@ -11,5 +11,5 @@ public sealed class AppSeoEntity
     public bool IndexingEnabled { get; private set; } = true;
 
 
-    public AppSeoEntity() { }
+    public SiteSeoEntity() { }
 }
