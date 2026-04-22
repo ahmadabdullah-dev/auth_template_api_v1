@@ -1,6 +1,6 @@
 <Solution>
+  <Project Path="API/API.csproj" Id="5fe66d2c-02d5-43b9-ab1a-335fd4721ba6" />
   <Project Path="Application/Application.csproj" />
-  <Project Path="auth_template_api_v1/API.csproj" />
   <Project Path="Domain/Domain.csproj" />
   <Project Path="Infrastructure/Infrastructure.csproj" />
 </Solution>
